@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Taller de Proyecto II</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="{{frec}}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="widget-header">
+    <i class="icon-th-list"></i>
+      <h3><p class="text-center">Ultima muestra</p></h3>
+  </div> <!-- /widget-header -->
+  
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr class="active">
+        <th><p class="text-center">Temperatura (°C)</p></th>
+        <th><p class="text-center">Humedad (%)</p></th>
+        <th><p class="text-center">Presión (hPa)</p></th>
+        <th><p class="text-center">Viento (Km/h)</p></th>
+      </tr>
+    </thead>
+    <tbody>
+	    <tr class="success">
+	        <td><p class="text-center">{{temp}}</p></td>
+	        <td><p class="text-center">{{hum}}</p></td>
+	        <td><p class="text-center">{{pres}}</p></td>
+	        <td><p class="text-center">{{viento}}</p></td>
+    	</tr>
+    </tbody>
+  </table>
+  <div class="widget-header">
+    <i class="icon-th-list"></i>
+      <h3><p class="text-center">Promedio de las ultimas 10 muestras</p></h3>
+  </div> <!-- /widget-header -->
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr class="active">
+        <th><p class="text-center">Temperatura (°C)</p></th>
+        <th><p class="text-center">Humedad (%)</p></th>
+        <th><p class="text-center">Presión (hPa)</p></th>
+        <th><p class="text-center">Viento (Km/h)</p></th>
+      </tr>
+    </thead>
+    <tbody>
+	    <tr class="success">
+	        <td><p class="text-center">{{promedioTemp}}</p></td>
+	        <td><p class="text-center">{{promedioHum}}</p></td>
+	        <td><p class="text-center">{{promedioPres}}</p></td>
+	        <td><p class="text-center">{{promedioViento}}</p></td>
+    	</tr>
+    </tbody>
+  </table>
+  <div class="widget-header">
+    <i class="icon-th-list"></i>
+      <h3><p class="bg-info">Frecuencia de Muestreo</p></h3>
+  </div> <!-- /widget-header -->
+    <h4>Frecuencia de muestreo actual = {{frec}}</h4>
+  <form action="/" method="post">
+    <h4>Nueva Frecuencia de Muestreo:</h4>
+      <!--<input type="radio" name="gender" value=1 checked> 1<br>
+      <input type="radio" name="gender" value=2> 2<br>
+      <input type="radio" name="gender" value=5> 5<br>
+      <input type="radio" name="gender" value=10> 10<br>
+      <input type="radio" name="gender" value=30> 30<br>
+      <input type="radio" name="gender" value=60> 60<br>-->
+    <select name="frecform">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=5>5</option>
+      <option value=10>10</option>
+      <option value=30>30</option>
+      <option value=60>60</option>
+    </select>
+    <button class="btn btn-xs btn-primary" type="submit" value="btn-xs">Aplicar</button>
+  </form>
+</div>
+
+</body>
+</html>

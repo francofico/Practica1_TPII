@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Taller de Proyecto II</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Última muestra</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Temperatura</th>
+        <th>Humedad</th>
+        <th>Presión</th>
+        <th>Viento</th>
+      </tr>
+    </thead>
+    <tbody>
+	    <tr>
+	        <td>{{temp}}</td>
+	        <td>{{hum}}</td>
+	        <td>{{pres}}</td>
+	        <td>{{viento}}</td>
+    	</tr>
+    </tbody>
+  </table>
+  <h2>Promedio de las ultimas muestras</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Temperatura</th>
+        <th>Humedad</th>
+        <th>Presión</th>
+        <th>Viento</th>
+      </tr>
+    </thead>
+    <tbody>
+	    <tr>
+	        <td>{{promedioTemp}}</td>
+	        <td>{{promedioHum}}</td>
+	        <td>{{promedioPres}}</td>
+	        <td>{{promedioViento}}</td>
+    	</tr>
+    </tbody>
+  </table>
+  <h2>Frecuencia de muestreo = {{frec}}</h2>
+</div>
+
+</body>
+</html>
